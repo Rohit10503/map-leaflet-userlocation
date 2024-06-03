@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    background-color: rgb(238, 143, 143);
+    width: 100%;
+}
+.navbar{
+    padding:  0.2em 1em;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.logo{
+    width: 10%;
+    
+}
+.logo img{
+    height: 4em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.textbar{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.textbar input{
+    width: 70%;
+    padding: 1em;
+    border-radius: 1em;
+    border: none;
+    font-size: 1em;
+    outline: none;
+}
+
+
+.head-right{
+    width: 40%;
+}
+.links{
+    width: 100%;
+}
+.links ul{
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+    
+    
+}
+.links ul li{
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+}
+.links ul li a{
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+}
+.links ul li a:hover{
+    color: grey;
+    cursor: pointer;
+    
+}
+.links ul li a:focus{
+    text-decoration: underline;
+}
+.bar{
+    display: none;
+    
+}
+.bar img{
+    
+    cursor: pointer;
+    height: 2em;
+    
+}
+
+.body-head{
+    padding-left: 1em;
+}
+.btn-section{
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map-btn{
+    border: 0;
+    width: 50%;
+    padding: 1em ;
+    background-color: rgb(245, 89, 89); 
+    box-shadow: 0px 3px 1px rgb(192, 188, 188);
+    color: white;
+    font-size: 1.1rem;
+}
+
+.map-btn:active{
+    translate: 0px 3px;
+    box-shadow: 0px 0px 0px ;
+}
+
+.footer h4{
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    position:absolute;
+    bottom: 0px;
+    background-color: white;
+    padding: 1em;
+    width: 100%;
+    background-color: rgb(209, 199, 199);
+}
+
+
+
+@media screen and (max-width: 800px) {
+    body {
+      background-color: rgb(240, 200, 115);
+    }
+    .logo{
+        width: 15%;
+    }
+    .logo img{
+        height:3.5em;
+    }
+    .textbar{
+        width: 70%;
+    }
+    .textbar input{
+        width: 80%;
+    }
+    .head-right{
+        width: 15%;
+    }
+    .links{
+        height: 70%;
+        right: 0px;
+        top: 5em;
+        position:absolute;
+        display: flex;
+        text-align: center;
+        background-color: aliceblue;
+        padding: 1em;
+        margin: auto;
+        display: none;
+        z-index: 100;
+    }
+   .links ul {
+    gap: 1em;
+    text-align: right;
+    padding-right: 1em;
+    flex-direction: column;
+    justify-content: center;
+
+   }
+   .links ul li:hover{
+    background-color: rgb(221, 216, 216);
+   }
+   
+    .bar{
+        
+        display: block;
+    }
+    .map-btn{
+        width: 100%;
+        padding: 1em ;
+        background-color: rgb(245, 89, 89); 
+        
+    
+    }
+    
+  }
