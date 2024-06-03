@@ -63,12 +63,13 @@
     font-style: oblique;
 }
 .links ul li a{
-    color: rgb(255, 254, 254);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 .links ul li a:hover{
     color: grey;
     cursor: pointer;
+    transition: all ease-in-out 0.15s;
     
 }
 .links ul li a:focus{
@@ -143,9 +144,9 @@
         width: 15%;
     }
     .links{
-        height: 70%;
+        height: 80%;
         right: 0px;
-        top: 5em;
+        top: 4em;
         position:absolute;
         display: flex;
         text-align: center;
@@ -166,9 +167,12 @@
    .links ul li:hover{
     background-color: rgb(221, 216, 216);
    }
+   .links ul li a{
+    color: rgb(73, 63, 63);
+    
+}
    
     .bar{
-        
         display: block;
     }
     .map-btn{
